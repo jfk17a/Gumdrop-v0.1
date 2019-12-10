@@ -14,11 +14,8 @@ class MyListFragment : Fragment() {
 
     private lateinit var myListViewModel: MyListViewModel
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View?
+    {
         myListViewModel =
             ViewModelProviders.of(this).get(MyListViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_gallery, container, false)
